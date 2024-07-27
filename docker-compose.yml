@@ -1,0 +1,12 @@
+services:
+  nodejs:
+    build: .
+    container_name: ${APP_NAME}
+    image: generalnodejs
+    working_dir: /opt/app
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+    volumes:
+      - ./${APP_NAME}:/opt/app
+    command: "tail -f /dev/null"
+    env_file: ./development.env
