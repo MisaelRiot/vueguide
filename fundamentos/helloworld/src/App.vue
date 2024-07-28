@@ -1,5 +1,7 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
+import OnOptionDirectives from './components/OnOptionDirectives.vue';
+import OnCompositionDirectives from './components/OnCompositionDirectives.vue';
 import BindOptionDirectives from './components/BindOptionDirectives.vue';
 import BindCompositionDirectives from './components/BindCompositionDirectives.vue';
 import iterativeDirectives from './components/iterativeDirectives.vue';
@@ -11,6 +13,8 @@ import ConditionalDirectives from './components/ConditionalDirectives.vue';
 </script>
 
 <template>
+  <OnOptionDirectives />
+  <OnCompositionDirectives />
   <BindCompositionDirectives />
   <BindOptionDirectives />
   <iterativeDirectives />
