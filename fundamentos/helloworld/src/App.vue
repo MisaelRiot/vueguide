@@ -1,5 +1,7 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
+import BindOptionDirectives from './components/BindOptionDirectives.vue';
+import BindCompositionDirectives from './components/BindCompositionDirectives.vue';
 import iterativeDirectives from './components/iterativeDirectives.vue';
 import PostContainer from './components/PostContainer.vue';
 import CounterOption from './components/CounterOption.vue';
@@ -9,6 +11,8 @@ import ConditionalDirectives from './components/ConditionalDirectives.vue';
 </script>
 
 <template>
+  <BindCompositionDirectives />
+  <BindOptionDirectives />
   <iterativeDirectives />
   <ConditionalDirectives />
   <h1>Listado de Post:</h1>
