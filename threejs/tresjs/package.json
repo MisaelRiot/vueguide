@@ -1,5 +1,5 @@
 {
-  "name": "helloworld",
+  "name": "tresjs",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -7,20 +7,18 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@tresjs/core": "^4.2.3",
     "gsap": "^3.12.5",
+    "three": "^0.167.0",
     "vue": "^3.4.29"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.8.0",
     "@vitejs/plugin-vue": "^5.0.5",
-    "@vue/eslint-config-prettier": "^9.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
-    "prettier": "^3.2.5",
     "vite": "^5.3.1"
   }
 }
