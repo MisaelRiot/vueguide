@@ -1,5 +1,6 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
+import ModelForm from './components/ModelForm.vue';
 import OnOptionDirectives from './components/OnOptionDirectives.vue';
 import OnCompositionDirectives from './components/OnCompositionDirectives.vue';
 import BindOptionDirectives from './components/BindOptionDirectives.vue';
@@ -13,6 +14,7 @@ import ConditionalDirectives from './components/ConditionalDirectives.vue';
 </script>
 
 <template>
+  <ModelForm />
   <OnOptionDirectives />
   <OnCompositionDirectives />
   <BindCompositionDirectives />
