@@ -1,5 +1,7 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
+import LifeCycleComposition from './components/LifeCycleComposition.vue';
+import LifeCycleOption from './components/LifeCycleOption.vue'
 import ModelForm from './components/ModelForm.vue';
 import OnOptionDirectives from './components/OnOptionDirectives.vue';
 import OnCompositionDirectives from './components/OnCompositionDirectives.vue';
@@ -14,6 +16,8 @@ import ConditionalDirectives from './components/ConditionalDirectives.vue';
 </script>
 
 <template>
+  <LifeCycleComposition />
+  <LifeCycleOption />
   <ModelForm />
   <OnOptionDirectives />
   <OnCompositionDirectives />
