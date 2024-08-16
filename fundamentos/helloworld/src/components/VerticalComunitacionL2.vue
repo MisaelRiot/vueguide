@@ -13,9 +13,14 @@ export default defineComponent({
             default: "Este elemento no tiene contenido"
         }
     },
-    setup(props) {
-        return { props }
+    emits: ["pshowAler"],
+    setup(props, {emit}) {
+        const handleClick = () => {
+            emit('pshowAler', `Hola desde componente ${props.title}`)
+        }
+        return { props, handleClick }
     }
+
 })
 </script>
 
@@ -25,7 +30,9 @@ export default defineComponent({
             {{ props.title }}
         </h3>
         <p>{{ props.content }}</p>
+        <button @click="handleClick">Show alert</button>
     </div>
+
 </template>
 
 <style scoped>
