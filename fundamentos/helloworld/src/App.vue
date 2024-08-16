@@ -1,5 +1,7 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
+import LifeCycleComposition from './components/LifeCycleComposition.vue';
+import LifeCycleOption from './components/LifeCycleOption.vue'
 import ModelForm from './components/ModelForm.vue';
 import OnOptionDirectives from './components/OnOptionDirectives.vue';
 import OnCompositionDirectives from './components/OnCompositionDirectives.vue';
@@ -11,9 +13,13 @@ import CounterOption from './components/CounterOption.vue';
 import CounterComposition from './components/CounterComposition.vue';
 import CounterCompositionWithSetupKw from './components/CounterCompositionWithSetupKw.vue';
 import ConditionalDirectives from './components/ConditionalDirectives.vue';
+import VerticalComunicationL1 from './components/VerticalComunicationL1.vue';
 </script>
 
 <template>
+  <VerticalComunicationL1 />
+  <LifeCycleComposition />
+  <LifeCycleOption />
   <ModelForm />
   <OnOptionDirectives />
   <OnCompositionDirectives />
