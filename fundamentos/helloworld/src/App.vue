@@ -13,9 +13,11 @@ import CounterOption from './components/CounterOption.vue';
 import CounterComposition from './components/CounterComposition.vue';
 import CounterCompositionWithSetupKw from './components/CounterCompositionWithSetupKw.vue';
 import ConditionalDirectives from './components/ConditionalDirectives.vue';
+import VerticalComunicationL1 from './components/VerticalComunicationL1.vue';
 </script>
 
 <template>
+  <VerticalComunicationL1 />
   <LifeCycleComposition />
   <LifeCycleOption />
   <ModelForm />

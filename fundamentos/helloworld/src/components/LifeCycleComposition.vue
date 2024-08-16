@@ -1,5 +1,7 @@
 <script setup>
 // utilizamos hooks
+// los hooks son funciones que utilizan callbacks que se ejecuta cuando
+// son llamados.
 import { onMounted, onUpdated } from 'vue'
 // se usan cuando queremos usar servicios o applicaciones mas complejas.
 onMounted(() => {
