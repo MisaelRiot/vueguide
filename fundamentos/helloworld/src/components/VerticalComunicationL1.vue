@@ -1,5 +1,6 @@
 <script setup>
 import VerticalComunitacionL2 from './VerticalComunitacionL2.vue';
+import VerticalComunicationComposition from './VerticalComunicationComposition.vue';
 
 let info = [
     { title: "Hijo 1", content: "Contenido del hijo 1" },
@@ -19,6 +20,10 @@ function showAlert(msg){
     <h1>Comunicacion vertical componente de nivel 1</h1>
     <div class="container">
         <VerticalComunitacionL2 v-for="elem in info" :key="elem.title" 
+        :title="elem.title" :content="elem.content" @pshowAler="showAlert"/>
+    </div>
+    <div class="container">
+        <VerticalComunicationComposition v-for="elem in info" :key="elem.title" 
         :title="elem.title" :content="elem.content" @pshowAler="showAlert"/>
     </div>
 </template>
