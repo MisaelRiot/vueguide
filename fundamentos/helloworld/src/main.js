@@ -27,4 +27,26 @@ app.directive('custom-size', {
     }
 })
 
+app.directive('custom-directive-args', {
+    beforeMount: (el, binding) => {
+        let size = 18
+        switch(binding.arg){
+            case 'sm':
+                size = 10
+                break
+            case 'md':
+                size = 18
+                break
+            case 'lg':
+                size = 25
+                break
+            case 'xl':
+                size = 40
+                break
+            case 'xxl':
+                size = 72
+        }
+        el.style.fontSize = `${size}px`
+    }
+})
 app.mount('#app')
