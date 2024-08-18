@@ -51,7 +51,7 @@ const addProduct = (productIndex) => {
 </script>
 
 <template>
-    <h2>Ejercicio 1: simulacion de factura</h2>
+    <h2 v-font-size >Ejercicio 1: simulacion de factura</h2>
     <select v-model="selectedCountry">
         <option
             v-for="(country, index) in ivaByCountry"
