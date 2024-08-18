@@ -71,7 +71,7 @@ const addProduct = (productIndex) => {
         />
     </div>
     <div>
-        <h3>Total:</h3>
+        <h3 v-custom-size="100">SubTotal:</h3>
         <p>{{ total }}</p>
         <h3>Impuestos:</h3>
         <p>{{ total_tax }}</p>

@@ -21,4 +21,10 @@ app.directive('font-size', {
     }
 })
 
+app.directive('custom-size', {
+    beforeMount: (el,binding) => {
+        el.style.fontSize = binding.value + "px"
+    }
+})
+
 app.mount('#app')
