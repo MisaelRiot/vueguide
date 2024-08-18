@@ -51,7 +51,7 @@ const addProduct = (productIndex) => {
 </script>
 
 <template>
-    <h2>Ejercicio 1: simulacion de factura</h2>
+    <h2 v-font-size >Ejercicio 1: simulacion de factura</h2>
     <select v-model="selectedCountry">
         <option
             v-for="(country, index) in ivaByCountry"
@@ -71,13 +71,17 @@ const addProduct = (productIndex) => {
         />
     </div>
     <div>
-        <h3>Total:</h3>
+        <h3 v-custom-size="100">SubTotal:</h3>
         <p>{{ total }}</p>
-        <h3>Impuestos:</h3>
+        <h3 v-custom-directive-args:xxl>Impuestos:</h3>
         <p>{{ total_tax }}</p>
         <h3>Productos comprados:</h3>
         <ul>
-            <li v-for="(item, index) in addedProducts" :key="index">{{ item.name }} - {{ item.price }}</li>
+            <li 
+                v-for="(item, index) in addedProducts"
+                :key="index"
+                v-custom-directive-modifiers.sm.green
+            >{{ item.name }} - {{ item.price }}</li>
         </ul>
     </div>
 </template>
