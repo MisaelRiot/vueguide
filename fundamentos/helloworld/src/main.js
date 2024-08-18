@@ -49,4 +49,25 @@ app.directive('custom-directive-args', {
         el.style.fontSize = `${size}px`
     }
 })
+
+// podemos incluir varios de ellos
+app.directive('custom-directive-modifiers', {
+    beforeMount: (el, binding) => {
+        let size = 18
+        if(binding.modifiers.sm){
+            size = 10
+        } else if(binding.modifiers.lg){
+            size = 25
+        }
+        el.style.fontSize = size
+
+        if(binding.modifiers.red){
+            el.style.color = "#ff0000"
+        }else if(binding.modifiers.green){
+            el.style.color = "#00ff00"
+        }else if(binding.modifiers.blue){
+            el.style.color = "#0000ff"
+        }
+    }
+})
 app.mount('#app')

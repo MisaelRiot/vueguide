@@ -77,7 +77,11 @@ const addProduct = (productIndex) => {
         <p>{{ total_tax }}</p>
         <h3>Productos comprados:</h3>
         <ul>
-            <li v-for="(item, index) in addedProducts" :key="index">{{ item.name }} - {{ item.price }}</li>
+            <li 
+                v-for="(item, index) in addedProducts"
+                :key="index"
+                v-custom-directive-modifiers.sm.green
+            >{{ item.name }} - {{ item.price }}</li>
         </ul>
     </div>
 </template>
