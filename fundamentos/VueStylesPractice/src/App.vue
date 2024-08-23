@@ -1,47 +1,35 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Card from 'primevue/card';
+import ToggleSwitch from 'primevue/toggleswitch';
+import Button from 'primevue/button';
+import { ref } from 'vue';
+let checked = ref(false);
+
+function toggleDarkMode() {
+  const element = document.querySelector('html');
+  element.classList.toggle('my-app-dark');
+}
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="card flex justify-center">
+    <ToggleSwitch v-model="checked" @click="toggleDarkMode()" />
+  </div>
+  <div>
+    <Card>
+      <template #title>Titulo de un Card</template>
+      <template #content>
+        <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eius libero eaque in, deserunt
+          accusantium dolores quisquam animi modi consequatur.</p>
+          <Button label="Primary" severity="success" />
+      </template>
+    </Card>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+<style>
+* {
+  font-family: "Roboto", sans-serif;
 }
 </style>
