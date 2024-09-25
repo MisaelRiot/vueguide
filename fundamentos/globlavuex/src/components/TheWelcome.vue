@@ -29,7 +29,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <h3>Counter</h3>
+  <h3>Counter - Example for Vuex with Option Api</h3>
   <h3>{{ counter }} x 2 = {{ doubleCounter }}</h3>
   <button @click="increment">Increment</button>
 </template>
