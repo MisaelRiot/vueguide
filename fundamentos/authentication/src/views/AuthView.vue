@@ -16,6 +16,15 @@ const loginUser = async () =>{
     }
     alert(loginMessage)
 }
+
+const takeInfoFromUser = () => {
+    const token = $cookies.get('auth')
+}
+
+const getUserInfo = () =>{
+    const token = $session.get('auth')
+}
+
 </script>
 
 <template>

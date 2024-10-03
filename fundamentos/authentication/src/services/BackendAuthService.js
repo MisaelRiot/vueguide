@@ -40,6 +40,9 @@ class BackendAuthService {
             }
 
             this.jwt = response.accessToken
+            $cookies.set('auth', response.accessToken)
+            $session.start()
+            $session.set('auth', response.accessToken)
             console.log(response)
             return true
         } catch (error) {
